@@ -1,0 +1,66 @@
+<form (ngSubmit)="onSubmit()" #signUpForm="ngForm">
+
+
+  <div class="row">
+    <h2>登録</h2>
+    <div class="col-md-3 input-lg">
+      <label>お名前</label>
+    </div>
+    <div class="col-md-9">
+      <input type="text" class="form-control input-lg" [(ngModel)]="sign_up.name" name="name">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-3 input-lg">
+      <label>会社名</label>
+    </div>
+    <div class="col-md-9">
+      <input type="text" class="form-control input-lg"
+             [(ngModel)]="sign_up.company" name="company">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-3 input-lg">
+      <label>メールアドレス</label>
+    </div>
+    <div class="col-md-9">
+      <input type="text"
+             class="form-control input-lg"
+             [(ngModel)]="sign_up.email"
+             name="email">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-3 input-lg">
+      <label>パスワード</label>
+    </div>
+    <div class="col-md-9">
+      <input type="password" class="form-control input-lg"
+             [(ngModel)]="sign_up.password" name="password">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-3 input-lg">
+      <label>パスワード確認用</label>
+    </div>
+    <div class="col-md-9">
+      <input type="password" class="form-control input-lg" [(ngModel)]="sign_up.password_confirmation"
+             name="password_confirmation">
+    </div>
+  </div>
+
+
+  <div class="row contact-item">
+    <div class="col-md-offset-3 col-md-9 input-lg">
+      <button type="submit" class="btn btn-danger btn-lg" (click)="data()">新規登録</button>
+    </div>
+  </div>
+</form>
